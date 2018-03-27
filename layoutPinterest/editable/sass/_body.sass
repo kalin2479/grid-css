@@ -1,0 +1,23 @@
+.container
+  display: grid
+  grid-template-columns: repeat(auto-fill,350px)
+  grid-gap: 5px
+  justify-content: center
+  .item
+    border-radius: 5px
+    padding: 10px
+    background: #f2f2f2
+    &.level-1
+      // tiene un tamaño de 3 filas
+      // Si yo quiero indicar que su inicio sea dinamico o que grid indique en donde debe empezar entonces debo solo configurar  solo su grid-row-end
+      grid-row-end: span 3
+    &.level-2
+      // tiene un tamaño de 3 filas
+      // Si yo quiero indicar que su inicio sea dinamico o que grid indique en donde debe empezar entonces debo solo configurar  solo su grid-row-end
+      grid-row-end: span 2
+    &.level-3
+      // tiene un tamaño de 3 filas
+      // Si yo quiero indicar que su inicio sea dinamico o que grid indique en donde debe empezar entonces debo solo configurar  solo su grid-row-end
+      grid-row-end: span 1
+    img
+      max-width: 100%
