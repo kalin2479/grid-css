@@ -1,0 +1,22 @@
+.container
+  display : grid
+  grid-template-columns: repeat(3,200px)
+  grid-template-rows: repeat(4,200px)
+  grid-gap : 5px
+  height: 100vh
+  // justify-content vamos a tener los siguientes valores: start end center strech space-around space-between space-evenly
+  justify-content: center
+  // align-content vamos a tener los siguientes valores: start end center strech space-around space-between space-evenly
+  align-content: center
+  // justify-items alinea de manera horizontal, recibe valores: start end center strech
+  // strech -> estira el contenido al espacio que nos de el grid, es el valor por defecto
+  // justify-items: center
+  // align-items alinea de manera vertical, recibe valores: start end center strech
+  // align-items: center
+  .item
+    background: lightblue
+    padding: 10px
+    border: 1px solid red
+    &:nth-of-type(5)
+      // align-self: start
+      // justify-self: start
