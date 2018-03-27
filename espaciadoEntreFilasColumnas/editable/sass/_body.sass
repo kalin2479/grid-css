@@ -1,0 +1,25 @@
+.container
+  display : grid
+  // grid-template-columns : 25% 200px 25%
+  // grid-template-rows : 300px 200px
+  // grid-template : fila / columna
+  grid-template : 300px 100px 100px / 1fr 1fr 1fr
+  // grid-column-gap => es para definir cuanto espaciado quiero para columanas
+  grid-column-gap : 30px
+  grid-row-gap : 50px
+  // grid-gap : filas /columnas
+  grid-gap : 30px / 50px
+  .item
+    background : lightblue
+    padding : 10px
+    border : 1px solid red
+    overflow : auto
+    // margin-right : 10px
+    // margin-bottom : 10px
+    &:nth-of-type(4)
+      background : blue
+      // display : subgrid
+      display : grid
+      grid-template : 50px 50px 50px / 200px 200px 200px
+    .item
+      background : yellow

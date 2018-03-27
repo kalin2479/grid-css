@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+/* line 5, E:/Git/vmc/web/plugin/grid/definiendoNombreLineas/editable/sass/_reset.sass */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 15, E:/Git/vmc/web/plugin/grid/definiendoNombreLineas/editable/sass/_reset.sass */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 18, E:/Git/vmc/web/plugin/grid/definiendoNombreLineas/editable/sass/_reset.sass */
+body {
+  line-height: 1;
+}
+
+/* line 21, E:/Git/vmc/web/plugin/grid/definiendoNombreLineas/editable/sass/_reset.sass */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, E:/Git/vmc/web/plugin/grid/definiendoNombreLineas/editable/sass/_reset.sass */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 28, E:/Git/vmc/web/plugin/grid/definiendoNombreLineas/editable/sass/_reset.sass */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+/* line 33, E:/Git/vmc/web/plugin/grid/definiendoNombreLineas/editable/sass/_reset.sass */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 37, E:/Git/vmc/web/plugin/grid/definiendoNombreLineas/editable/sass/_reset.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, E:/Git/vmc/web/plugin/grid/definiendoNombreLineas/editable/sass/_body.sass */
+.container {
+  display: grid;
+  grid-template-columns: [inicio] 1fr [linea2] 1fr [linea3] 1fr [destacado-end] 1fr [linea5] 1fr [destacado2-end] 1fr [linea7] 1fr [final];
+  grid-template-rows: [inicio] 200px [inicio2] 200px [final];
+  grid-gap: 5px;
+  height: 100vh;
+}
+
+/* line 9, E:/Git/vmc/web/plugin/grid/definiendoNombreLineas/editable/sass/_body.sass */
+.container .item {
+  background: lightblue;
+  padding: 10px;
+  border: 1px solid red;
+}
+
+/* line 13, E:/Git/vmc/web/plugin/grid/definiendoNombreLineas/editable/sass/_body.sass */
+.container .item:nth-of-type(1) {
+  grid-column: inicio / destacado-end;
+  grid-row: inicio / final;
+}
+
+.container .item:nth-of-type(2) {
+  grid-column: destacado-end / destacado2-end;
+  grid-row: inicio / final;
+}
+
+.container .item:nth-of-type(3) {
+  grid-column: destacado2-end / final;
+}
+
+/* line 10, E:/Git/vmc/web/plugin/grid/definiendoNombreLineas/editable/sass/main.sass */
+body {
+  margin: 50px;
+}
+
+/*# sourceMappingURL=../../css/main.map */
