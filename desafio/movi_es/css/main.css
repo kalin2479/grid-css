@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+/* line 5, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/libs/_reset.sass */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 15, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/libs/_reset.sass */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 18, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/libs/_reset.sass */
+body {
+  line-height: 1;
+}
+
+/* line 21, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/libs/_reset.sass */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/libs/_reset.sass */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 28, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/libs/_reset.sass */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+/* line 33, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/libs/_reset.sass */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 37, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/libs/_reset.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_header.sass */
+.header {
+  -webkit-display: grid;
+  -moz-display: grid;
+  -ms-display: grid;
+  -o-display: grid;
+  display: grid;
+  -webkit-grid-template-columns: 300px 1fr 350px;
+  -moz-grid-template-columns: 300px 1fr 350px;
+  -ms-grid-template-columns: 300px 1fr 350px;
+  -o-grid-template-columns: 300px 1fr 350px;
+  grid-template-columns: 300px 1fr 350px;
+  justify-content: space-between;
+  grid-gap: 30px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
+  padding: 5px 0;
+}
+
+/* line 10, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_header.sass */
+.header .item:nth-of-type(2) {
+  align-self: center;
+  justify-self: end;
+}
+
+/* line 13, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_header.sass */
+.header .item:nth-of-type(2) input[type="text"] {
+  width: 600px;
+  height: 35px;
+  color: #414141;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid #8b8b8b;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans";
+}
+
+@media screen and (max-width: 1600px) {
+  /* line 13, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_header.sass */
+  .header .item:nth-of-type(2) input[type="text"] {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  /* line 13, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_header.sass */
+  .header .item:nth-of-type(2) input[type="text"] {
+    width: 300px;
+  }
+}
+
+/* line 26, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_header.sass */
+.header .item:first-child {
+  align-self: center;
+  justify-self: start;
+}
+
+/* line 29, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_header.sass */
+.header .item:first-child a {
+  margin-left: 40px;
+}
+
+/* line 31, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_header.sass */
+.header .item:first-child a img {
+  height: 50px;
+}
+
+/* line 33, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_header.sass */
+.header .item .boxAccess {
+  -webkit-display: grid;
+  -moz-display: grid;
+  -ms-display: grid;
+  -o-display: grid;
+  display: grid;
+  -webkit-grid-template-columns: 1fr 50px 80px;
+  -moz-grid-template-columns: 1fr 50px 80px;
+  -ms-grid-template-columns: 1fr 50px 80px;
+  -o-grid-template-columns: 1fr 50px 80px;
+  grid-template-columns: 1fr 50px 80px;
+  grid-gap: 10px;
+}
+
+/* line 37, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_header.sass */
+.header .item .boxAccess .userAccess {
+  align-self: center;
+  justify-self: start;
+}
+
+/* line 40, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_header.sass */
+.header .item .boxAccess .userAccess:nth-of-type(1) {
+  justify-self: end;
+}
+
+/* line 42, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_header.sass */
+.header .item .boxAccess .userAccess .boxTriangulo {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  display: block;
+}
+
+/* line 47, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_header.sass */
+.header .item .boxAccess .userAccess .boxTriangulo span {
+  width: 0;
+  height: 0;
+  border-top: 12px solid #414141;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  position: absolute;
+}
+
+/* line 54, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_header.sass */
+.header .item .boxAccess p {
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Open Sans";
+  color: #414141;
+}
+
+/* line 57, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_header.sass */
+.header .item .boxAccess img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+/* line 62, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_header.sass */
+.header .item a {
+  text-decoration: none;
+}
+
+/* line 64, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_header.sass */
+.header .item a.logo {
+  display: block;
+}
+
+/* line 66, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_header.sass */
+.header .item img {
+  max-width: 100%;
+}
+
+/* line 1, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_body.sass */
+.body {
+  -webkit-display: grid;
+  -moz-display: grid;
+  -ms-display: grid;
+  -o-display: grid;
+  display: grid;
+  -webkit-grid-template-columns: 100px 1fr;
+  -moz-grid-template-columns: 100px 1fr;
+  -ms-grid-template-columns: 100px 1fr;
+  -o-grid-template-columns: 100px 1fr;
+  grid-template-columns: 100px 1fr;
+  grid-template-areas: "boxNav boxBody";
+}
+
+/* line 6, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_body.sass */
+.body .boxBody {
+  grid-area: boxBody;
+  padding-top: 35px;
+}
+
+/* line 10, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_body.sass */
+.body .boxBody h2.title {
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Open Sans";
+  color: #0e0b0d;
+  line-height: 1.5em;
+}
+
+/* line 14, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_body.sass */
+.body .boxBody .posts-container {
+  width: 100%;
+  -webkit-display: grid;
+  -moz-display: grid;
+  -ms-display: grid;
+  -o-display: grid;
+  display: grid;
+  -webkit-grid-template-columns: repeat(3, auto);
+  -moz-grid-template-columns: repeat(3, auto);
+  -ms-grid-template-columns: repeat(3, auto);
+  -o-grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  grid-gap: 10px 0;
+  margin-bottom: 10px;
+}
+
+/* line 21, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_body.sass */
+.body .boxBody .posts-container .title {
+  grid-column-end: span 3;
+}
+
+/* line 23, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_body.sass */
+.body .boxBody .posts-container .posts-list {
+  -webkit-display: grid;
+  -moz-display: grid;
+  -ms-display: grid;
+  -o-display: grid;
+  display: grid;
+  -webkit-grid-template-columns: repeat(3, 350px);
+  -moz-grid-template-columns: repeat(3, 350px);
+  -ms-grid-template-columns: repeat(3, 350px);
+  -o-grid-template-columns: repeat(3, 350px);
+  grid-template-columns: repeat(3, 350px);
+  grid-gap: 20px 50px;
+}
+
+/* line 28, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_body.sass */
+.body .boxBody .posts-container .posts-list a.posts {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  border: 1px solid red;
+}
+
+/* line 36, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_body.sass */
+.body .boxBody .posts-container .posts-list a.posts .posts-image {
+  margin: 0;
+}
+
+/* line 38, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_body.sass */
+.body .boxBody .posts-container .posts-list a.posts .posts-image img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+/* line 41, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_body.sass */
+.body .boxBody .posts-container .posts-list a.posts .posts-overlay {
+  background: rgba(254, 94, 96, 0.85);
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 5px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+/* line 49, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_body.sass */
+.body .boxBody .posts-container .posts-list a.posts .posts-overlay h3, .body .boxBody .posts-container .posts-list a.posts .posts-overlay p {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Open Sans";
+  color: white;
+  line-height: 1.5em;
+}
+
+/* line 53, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_body.sass */
+.body .boxBody .posts-container .posts-list a.posts .posts-overlay p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* line 56, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_body.sass */
+.body .boxNav {
+  background: #fd6162;
+  grid-area: boxNav;
+  -webkit-display: grid;
+  -moz-display: grid;
+  -ms-display: grid;
+  -o-display: grid;
+  display: grid;
+  -webkit-grid-template-columns: auto;
+  -moz-grid-template-columns: auto;
+  -ms-grid-template-columns: auto;
+  -o-grid-template-columns: auto;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-content: space-between;
+}
+
+/* line 63, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_body.sass */
+.body .boxNav ul {
+  -webkit-display: grid;
+  -moz-display: grid;
+  -ms-display: grid;
+  -o-display: grid;
+  display: grid;
+  -webkit-grid-template-columns: 1fr;
+  -moz-grid-template-columns: 1fr;
+  -ms-grid-template-columns: 1fr;
+  -o-grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 35px;
+  padding-top: 35px;
+}
+
+/* line 68, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_body.sass */
+.body .boxNav ul li {
+  align-self: center;
+  justify-self: center;
+}
+
+/* line 71, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_body.sass */
+.body .boxNav a {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Open Sans";
+  color: white;
+  line-height: 1.5em;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+/* line 78, E:/Git/vmc/web/plugin/grid/desafio/movi_es/editable/sass/_body.sass */
+.body .boxNav a .iconMenu {
+  display: block;
+  width: 50px;
+  height: 30px;
+  margin: 0 auto 8px;
+  background: #8e8e8e;
+}
+
+/*# sourceMappingURL=../../css/main.map */

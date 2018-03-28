@@ -1,0 +1,83 @@
+.body
+  @include prefix(display,grid)
+  @include prefix(grid-template-columns,100px 1fr)
+  grid-template-areas: "boxNav boxBody"
+  // height: 100vh
+  .boxBody
+    grid-area: boxBody
+    padding-top: 35px
+    h2
+      &.title
+        @include my-font(16px, 800, "Open Sans")
+        color: rgb(14, 11, 13)
+        line-height: 1.5em
+    .posts-container
+      width: 100%
+      @include prefix(display,grid)
+      @include prefix(grid-template-columns,repeat(3,auto))
+      justify-content: center
+      grid-gap: 10px 0
+      margin-bottom: 10px
+      .title
+        grid-column-end: span 3
+      .posts-list
+        @include prefix(display,grid)
+        @include prefix(grid-template-columns,repeat(3,350px))
+        grid-gap: 20px 50px
+        a
+          &.posts
+            cursor: pointer
+            // width: 277px
+            // height: 187px
+            display: block
+            text-decoration: none
+            position: relative
+            border: 1px solid red
+            .posts-image
+              margin: 0
+              img
+                max-width: 100%
+                vertical-align: top
+            .posts-overlay
+              background: rgba(254,94,96,0.85)
+              box-sizing: border-box
+              padding-left: 10px
+              padding-right: 5px
+              position: absolute
+              bottom: 0px
+              left: 0px
+              h3,p
+                @include my-font(18px, 600, "Open Sans")
+                color: white
+                line-height: 1.5em
+              p
+                font-size: 12px
+                font-weight: 400
+  .boxNav
+    background: #fd6162
+    grid-area: boxNav
+    @include prefix(display,grid)
+    @include prefix(grid-template-columns,auto)
+    justify-content: center
+    align-content: space-between
+    ul
+      @include prefix(display,grid)
+      @include prefix(grid-template-columns,1fr)
+      grid-gap : 35px
+      padding-top: 35px
+      li
+        align-self: center
+        justify-self: center
+    a
+      @include my-font(14px, 600, "Open Sans")
+      color: white
+      line-height: 1.5em
+      text-align: center
+      display: block
+      text-decoration: none
+      .iconMenu
+        display: block
+        width: 50px
+        height: 30px
+        margin: 0 auto 8px
+        background: rgb(142, 142, 142)
