@@ -1,0 +1,23 @@
+// El nombre para llamarlo se hace de la siguiente manera: +border-radius(valor)
+=border-radius($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    -ms-border-radius: $radius
+    border-radius: $radius
+
+=box($radius,$shadowColour,$grid1,$grid2)
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    -ms-border-radius: $radius
+    border-radius: $radius
+
+    -webkit-box-shadow: 0 rem(5px) rem(10px) $shadowColour
+    -moz-box-shadow: 0 rem(5px) rem(10px) $shadowColour
+    -ms-box-shadow: 0 rem(5px) rem(10px) $shadowColour
+    box-shadow: 0 rem(5px) rem(10px) $shadowColour
+
+    background: #036
+    background: -webkit-linear-gradient($grid1,$grid2)
+    background: -o-linear-gradient($grid1,$grid2)
+    background: -moz-linear-gradient($grid1,$grid2)
+    background: linear-gradient($grid1,$grid2)

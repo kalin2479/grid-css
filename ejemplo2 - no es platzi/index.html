@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid</title>
+</head>
+<style>
+    body{
+        font: 3rem sans-serif;
+        background-color: rgba(0,0,0,0.2);
+        color: white;
+    }
+    .grid-item:nth-child(2n){
+        background-color: #1a83b5;
+    }
+    .grid-item:nth-child(2n+1){
+        background-color: #37abe0;
+    }
+    .grid{
+        padding: 1rem;
+    }
+    .grid-item{
+        padding: 1.5rem;
+        border-radius: 1rem;
+    }
+    /* Empezamos con la parte de grid */
+    .grid{
+        display: grid;
+        /* Vamos a comenzar a definir columnas para ello tenemos
+        la propiedad grid-template-columns, vamos a especificar
+        de manera explicita como seran las columnas, vamos a indicar
+        que las column son de 200px cada uno */
+        /* grid-template-columns: 200px 100px 200px ; */
+
+        /*  Para el caso de las filas tenemos la propiedad grid-template-rows, le vamos a indicar
+        de cuanto va hacer el alto*/
+        /* grid-template-rows: 150px 100px 150px; */
+        /* Para dar espacios entre tracks utilizo la siguiente propiedad
+        grid-column-gap. De igualmanera hay para row */
+        /* grid-column-gap : 1rem;
+        grid-row-gap : 0.5rem; */
+    }
+    /* Se tiene una nueva medida que es FR que sinifica : Fraction unit (es el espacio
+    disponible .. lo vamos a ver ahora ) es para indicarle que se reparta el espacio
+    disponible entre el numero de elementos que le indiquemos grid-template-columns
+    FR solo esta funcionando con grid layout por ahora
+    */
+    .grid{
+        min-height: 200vh;
+        grid-column-gap : 1rem;
+        grid-row-gap : 0.5rem;
+        /* Si se definen mas columnas de las que hay, esta quedara vacia. */
+        /* grid-template-columns : 1fr 2fr 1fr 1fr 2fr 1fr; */
+        /* grid-template-columns : 150px 2fr 20%; */
+        grid-template-columns : 20% 1fr 1fr;
+        /* grid-template-rows : 10rem 1fr 1fr 0.5fr; */
+        /* grid-template-rows : 15rem 1fr 1fr 1fr; */
+        grid-template-rows : 15rem 5rem 1fr 1fr;
+        /* Para indicar los demas elementos que no considere en mi template
+        como por ej para las columnas utilizo la propiedad grid-auto-rows */
+        grid-auto-rows : 150px;
+        /* De forma similar tambien puedo hacer para las columnas: grid-auro-columns */
+    }
+</style>
+<body>
+    <div class="grid">
+        <div class="grid-item 1">1</div>
+        <div class="grid-item 2">2</div>
+        <div class="grid-item 3">3</div>
+        <div class="grid-item 4">4</div>
+        <div class="grid-item 5">5</div>
+        <div class="grid-item 6">6</div>
+        <div class="grid-item 7">7</div>
+        <div class="grid-item 8">8</div>
+        <div class="grid-item 9">9</div>
+        <div class="grid-item 10">10</div>
+        <div class="grid-item 11">11</div>
+        <div class="grid-item 12">12</div>
+        <div class="grid-item 13">13</div>
+        <div class="grid-item 14">14</div>
+        <div class="grid-item 15">15</div>
+        <div class="grid-item 16">16</div>
+        <div class="grid-item 17">17</div>
+
+
+    </div>
+</body>
+</html>

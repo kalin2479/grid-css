@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid</title>
+</head>
+<style>
+    body{
+        font: 3rem sans-serif;
+        background-color: rgba(0,0,0,0.2);
+        color: white;
+    }
+    .grid-item:nth-child(2n){
+        background-color: #1a83b5;
+    }
+    .grid-item:nth-child(2n+1){
+        background-color: #37abe0;
+    }
+    .grid{
+        padding: 1rem;
+    }
+    .grid-item{
+        padding: 1.5rem;
+        border-radius: 1rem;
+    }
+    /* Empezamos con la parte de grid */
+    .grid{
+        display: grid;
+        /* el valor por defecto que trae el justify-items es strech ,
+        que indica que se extiende a todo el ancho del contenedor */
+        justify-items: start;
+    }
+</style>
+<body>
+    <div class="grid">
+        <div class="grid-item a">A</div>
+        <div class="grid-item b">B</div>
+        <div class="grid-item c">C</div>
+        <div class="grid-item d">D</div>
+        <div class="grid-item e">E</div>
+        <div class="grid-item f">F</div>
+        <div class="grid-item g">G</div>
+    </div>
+</body>
+</html>

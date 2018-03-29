@@ -1,0 +1,30 @@
+.container
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(4,1fr)
+    grid-gap: 10px
+    height: 100vh
+    .item
+        background: $lightBlue
+        padding: rem(10px)
+        border: rem(1px solid red)
+        &:nth-of-type(1)
+            background: blue
+            // Le vamos a indicar cuantos espacios va ha ocupar
+            // No hace referencia a los espacios (columnas) sino a las lineas se cuenta desde
+            // la linea izquierda del elmento hacia adelante, para el ejemplo 3 lineas
+            grid-column-start: 1
+            grid-column-end: 3
+        &:nth-of-type(8)
+            background: blue
+            // Estamos inicando el numero de linea
+            // grid-column: 2 / 4
+            // con span 2 => indicamos el numero de espacios que queremos ocupar
+            grid-column: 1 / span 2
+            // si queremos que ocupe todo el espacio colocamos -1
+            grid-column: 1 / -1
+        &:nth-of-type(7)
+            background: blue
+            // grid-column-start: 1
+            // grid-column-end: 3
+            grid-column: 2 / 4
